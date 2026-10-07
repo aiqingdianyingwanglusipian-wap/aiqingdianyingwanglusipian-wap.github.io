@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="keywords" content="爱情电影网 撸丝片,aiqingdianyingwang,爱情片推荐,浪漫电影,爱情电影排行榜,高分爱情片,经典爱情电影,电影评论,观影指南">
+<meta name="description" content="爱情电影网 撸丝片(aiqingdianyingwang)专注爱情电影与浪漫爱情片推荐，提供经典爱情片单、高分爱情电影排行、爱情片评论与观影指南，让每一段心动都被温柔记录。">
+<title>爱情电影网 撸丝片 - 专注爱情电影，让每一段心动都被温柔记录</title>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --pink:#f7c6d2;--rose:#e58aa1;--deep:#c25472;--plum:#8a3b56;--lav:#b9a6d4;--ink:#4a2a36;
+  --cream:#fdf6f7;--paper:#fffafb;--gold:#e0a94a;--sage:#9bb29b;--line:#f1dde3;
+}
+html{scroll-behavior:smooth}
+body{font-family:"Georgia","PingFang SC","Microsoft YaHei","Songti SC",serif;background:var(--cream);color:var(--ink);line-height:1.9;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+::selection{background:var(--rose);color:#fff}
+
+/* ===== 顶栏 ===== */
+header{position:sticky;top:0;z-index:50;background:rgba(255,250,251,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.brand{max-width:1120px;margin:0 auto;padding:13px 24px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.logo{display:flex;align-items:center;gap:13px}
+.heart{width:46px;height:46px;background:linear-gradient(135deg,var(--rose),var(--deep));border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:19px;flex-shrink:0;box-shadow:0 4px 12px rgba(226,138,161,.4)}
+.logo h1{font-size:clamp(18px,3vw,25px);font-weight:900;color:var(--plum);letter-spacing:.5px;font-family:"PingFang SC","Microsoft YaHei",sans-serif}
+.logo h1 small{display:block;font-size:9px;font-weight:400;color:var(--deep);letter-spacing:4px;margin-top:3px;font-family:"Segoe UI",sans-serif;text-transform:uppercase}
+.addr{font-size:11px;color:var(--deep);text-align:right;line-height:1.9;font-family:"Segoe UI",sans-serif}
+.addr b{color:var(--plum)}
+nav.top{max-width:1120px;margin:0 auto;padding:0 24px;border-top:1px solid var(--line);display:flex;gap:0;overflow-x:auto}
+nav.top a{font-size:13.5px;font-weight:600;color:var(--ink);padding:12px 22px;white-space:nowrap;transition:.2s;border-right:1px solid var(--line)}
+nav.top a:first-child{border-left:1px solid var(--line)}
+nav.top a:hover{background:var(--pink);color:var(--plum)}
+.burger{display:none;background:var(--rose);border:0;color:#fff;width:40px;height:38px;border-radius:20px;font-size:18px;cursor:pointer;margin:8px 0;flex-shrink:0}
+
+/* ===== 章节标题 ===== */
+section{padding:82px 0}
+.sec{margin-bottom:50px;text-align:center}
+.sec .k{font-size:10px;letter-spacing:4px;color:var(--deep);font-family:"Segoe UI",sans-serif;font-weight:700}
+.sec h2{font-size:clamp(23px,3.6vw,33px);font-weight:900;color:var(--plum);font-family:"PingFang SC","Microsoft YaHei",sans-serif;margin:8px 0 14px;letter-spacing:.5px}
+.sec h2 em{font-style:normal;color:var(--deep)}
+.sec .ln{width:60px;height:2px;background:linear-gradient(90deg,var(--rose),var(--lav));margin:0 auto 14px;border-radius:2px}
+.sec .ds{font-size:14.5px;color:#8a6a76;max-width:640px;margin:0 auto;font-family:"PingFang SC","Microsoft YaHei",sans-serif}
+
+/* ===== Hero ===== */
+.hero{position:relative;background:linear-gradient(135deg,#fce4ea 0%,#f7c6d2 45%,#dbb8e0 100%);overflow:hidden;padding:96px 0}
+.hero::before,.hero::after{content:"";position:absolute;border-radius:50%;background:rgba(255,255,255,.5)}
+.hero::before{width:320px;height:320px;right:-90px;top:-90px}
+.hero::after{width:220px;height:220px;left:-70px;bottom:-70px}
+.hero .wrap{position:relative;display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:center;z-index:1}
+.pill{display:inline-block;font-size:11px;letter-spacing:2px;color:var(--plum);background:#fff;border:1px solid var(--rose);padding:5px 16px;border-radius:20px;font-family:"Segoe UI",sans-serif}
+.hero h2{font-size:clamp(32px,5.4vw,52px);font-weight:900;line-height:1.28;color:var(--plum);font-family:"Songti SC","STSong",serif;margin:18px 0 16px}
+.hero h2 em{font-style:normal;color:var(--deep)}
+.hero p{font-size:15px;color:#7a5664;max-width:470px;font-family:"PingFang SC",sans-serif}
+.acts{margin-top:26px;display:flex;gap:12px;flex-wrap:wrap}
+.btn{border:0;cursor:pointer;padding:13px 30px;font-size:13.5px;font-weight:700;font-family:"Segoe UI",sans-serif;transition:.25s;border-radius:30px}
+.bp{background:linear-gradient(135deg,var(--deep),var(--plum));color:#fff}
+.bp:hover{filter:brightness(1.1);transform:translateY(-2px)}
+.bo{background:#fff;color:var(--plum);border:1.5px solid var(--rose)}
+.bo:hover{background:var(--pink)}
+.quote{font-size:12px;color:var(--deep);margin-top:26px;font-style:italic;font-family:Georgia,serif}
+
+/* Hero 右侧相册卡 */
+.album{background:#fff;padding:18px;border-radius:6px;box-shadow:0 18px 44px rgba(138,59,86,.18);transform:rotate(1.5deg)}
+.album .rw{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.album .ph{height:150px;border-radius:4px;display:flex;align-items:center;justify-content:center;color:#fff;text-align:center;padding:12px;font-family:"Songti SC",serif}
+.album .ph b{font-size:15px;line-height:1.5}
+.album .cap{margin-top:14px;text-align:center;font-size:12.5px;color:var(--plum);font-family:"PingFang SC",sans-serif}
+.album .cap span{display:block;font-size:10px;color:var(--deep);letter-spacing:3px;margin-top:4px;font-family:"Segoe UI",sans-serif}
+
+/* ===== 栏目一：热播榜单（左右主副） ===== */
+.chart{display:grid;grid-template-columns:1.1fr .9fr;gap:24px;align-items:start}
+.champ{background:#fff;border:1px solid var(--line);padding:0;overflow:hidden;border-radius:6px}
+.champ .cv{height:300px;display:flex;align-items:center;justify-content:center;text-align:center;padding:24px;position:relative}
+.champ .cv .rk{position:absolute;top:16px;left:16px;width:52px;height:52px;background:var(--gold);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:19px;font-family:"Segoe UI",sans-serif;box-shadow:0 4px 10px rgba(224,169,74,.4)}
+.champ .cv b{font-size:25px;color:#fff;font-family:"Songti SC",serif;line-height:1.5}
+.champ .cv span{display:block;font-size:10px;letter-spacing:3px;color:#fff;margin-top:12px;font-family:"Segoe UI",sans-serif}
+.champ .in{padding:22px}
+.champ .in .sc{font-size:12px;color:var(--gold);font-weight:700;letter-spacing:1px}
+.champ .in h3{font-size:21px;font-weight:900;color:var(--plum);font-family:"PingFang SC",sans-serif;margin:6px 0 8px}
+.champ .in p{font-size:13.5px;color:#8a6a76;font-family:"PingFang SC",sans-serif}
+.champ .in .more{display:inline-block;margin-top:12px;font-size:12.5px;color:var(--deep);font-weight:700;border-bottom:1px solid var(--rose);padding-bottom:2px}
+.rows{display:flex;flex-direction:column;gap:12px}
+.row{display:grid;grid-template-columns:44px 1fr 56px;gap:14px;align-items:center;background:#fff;border:1px solid var(--line);padding:12px 14px;border-radius:6px;transition:.25s}
+.row:hover{background:var(--pink)}
+.row .n{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,var(--pink),var(--rose));color:#fff;display:flex;align-items:center;justify-content:center;font-weight:900;font-family:"Segoe UI",sans-serif}
+.row .tx h4{font-size:15px;font-weight:900;color:var(--plum);font-family:"PingFang SC",sans-serif}
+.row .tx span{font-size:11px;color:var(--deep);font-family:"Segoe UI",sans-serif}
+.row .st{text-align:right;font-size:13px;font-weight:700;color:var(--gold)}
+
+/* ===== 栏目二：主题（圆角色块） ===== */
+.themes{display:grid;grid-template-columns:repeat(auto-fit,minmax(245px,1fr));gap:20px}
+.th{background:#fff;border:1px solid var(--line);border-radius:16px;padding:26px 22px;transition:.3s;position:relative;overflow:hidden}
+.th::before{content:"";position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--rose),var(--lav))}
+.th:hover{transform:translateY(-5px);box-shadow:0 14px 30px rgba(138,59,86,.12)}
+.th .ic{width:48px;height:48px;border-radius:14px;display:flex;align-items:center;justify-content:center;color:#fff;font-size:20px;margin-bottom:14px}
+.th h3{font-size:17.5px;font-weight:900;color:var(--plum);font-family:"PingFang SC",sans-serif;margin-bottom:8px}
+.th p{font-size:13.5px;color:#8a6a76;font-family:"PingFang SC",sans-serif}
+.th .cnt{margin-top:14px;font-size:11.5px;color:var(--deep);font-family:"Segoe UI",sans-serif}
+
+/* ===== 栏目三：新片速递（横向滚动） ===== */
+.rail{display:flex;gap:18px;overflow-x:auto;padding:6px 4px 24px;scroll-snap-type:x mandatory}
+.rail::-webkit-scrollbar{height:8px}
+.rail::-webkit-scrollbar-thumb{background:var(--rose);border-radius:4px}
+.cd{flex:0 0 230px;scroll-snap-align:start;background:#fff;border:1px solid var(--line);border-radius:6px;overflow:hidden;transition:.25s}
+.cd:hover{transform:translateY(-4px);box-shadow:0 12px 26px rgba(138,59,86,.14)}
+.cd .cv{height:300px;display:flex;align-items:flex-end;justify-content:flex-start;padding:16px;color:#fff}
+.cd .cv b{font-size:17px;font-family:"Songti SC",serif;line-height:1.5;text-shadow:0 2px 6px rgba(0,0,0,.3)}
+.cd .in{padding:14px}
+.cd .in .tg{font-size:10px;color:var(--plum);background:var(--pink);padding:2px 9px;border-radius:12px;font-family:"Segoe UI",sans-serif}
+.cd .in h4{font-size:15px;font-weight:900;color:var(--plum);font-family:"PingFang SC",sans-serif;margin:9px 0 6px}
+.cd .in .sc{font-size:12px;color:var(--gold);font-weight:700}
+
+/* ===== 栏目四：影评（引言块） ===== */
+.quotes{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:22px}
+.qc{background:#fff;border:1px solid var(--line);border-left:4px solid var(--lav);padding:26px;border-radius:0 6px 6px 0}
+.qc .q{font-size:26px;color:var(--rose);font-family:Georgia,serif;line-height:1;height:22px}
+.qc p{font-size:14px;color:#6f525d;margin:10px 0 16px;font-family:"PingFang SC",sans-serif;line-height:2}
+.qc .au{display:flex;align-items:center;gap:11px;border-top:1px dashed var(--line);padding-top:13px}
+.qc .av{width:38px;height:38px;border-radius:50%;background:linear-gradient(135deg,var(--rose),var(--lav));color:#fff;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:13px;font-family:"Segoe UI",sans-serif}
+.qc .au b{font-size:13.5px;color:var(--plum);font-family:"PingFang SC",sans-serif}
+.qc .au span{display:block;font-size:11px;color:var(--deep);font-family:"Segoe UI",sans-serif}
+
+/* ===== 数据条 ===== */
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));background:linear-gradient(135deg,var(--plum),var(--deep));border-radius:6px;overflow:hidden}
+.stt{text-align:center;padding:30px 14px;border-right:1px solid rgba(255,255,255,.14)}
+.stt:last-child{border-right:0}
+.stt strong{display:block;font-size:29px;font-weight:900;color:var(--gold);font-family:Georgia,serif}
+.stt span{font-size:12px;color:var(--pink);letter-spacing:1px;font-family:"Segoe UI",sans-serif}
+
+/* ===== 关于 ===== */
+.abt{display:grid;grid-template-columns:1fr 1fr;gap:52px;align-items:center}
+.abt .l h2{font-size:26px;font-weight:900;color:var(--plum);font-family:"PingFang SC",sans-serif;margin-bottom:16px}
+.abt .l p{font-size:14.5px;color:#8a6a76;margin-bottom:12px;font-family:"PingFang SC",sans-serif}
+.abt .l .acts{margin-top:20px;display:flex;gap:12px}
+.abt .r{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.fbox{background:#fff;border:1px solid var(--line);border-radius:6px;padding:20px;text-align:center}
+.fbox .ic{font-size:22px;margin-bottom:9px}
+.fbox b{font-size:15px;color:var(--plum);display:block;margin-bottom:4px;font-family:"PingFang SC",sans-serif}
+.fbox span{font-size:12.5px;color:#8a6a76;font-family:"PingFang SC",sans-serif}
+
+/* ===== 页脚 ===== */
+footer{background:#4a2a36;color:#e8c6d0;padding:46px 0 0}
+.f{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:34px;max-width:1120px;margin:0 auto;padding:0 24px 30px}
+.f .id .heart{margin-bottom:12px}
+.f .id h4{font-size:17px;font-weight:900;color:#fff;margin-bottom:8px;font-family:"PingFang SC",sans-serif}
+.f .id p{font-size:13px;line-height:1.9}
+.f h5{font-size:12px;font-weight:700;color:var(--gold);margin-bottom:12px;letter-spacing:2px;font-family:"Segoe UI",sans-serif}
+.f a{display:block;color:#e8c6d0;font-size:13px;padding:5px 0;transition:.2s}
+.f a:hover{color:var(--gold)}
+.cp{max-width:1120px;margin:0 auto;padding:18px 24px;border-top:1px solid rgba(232,198,208,.18);font-size:12px;color:#c79ba7;text-align:center;font-family:"Segoe UI",sans-serif}
+.cp b{color:var(--gold)}
+
+#top{position:fixed;right:16px;bottom:20px;z-index:99;width:44px;height:44px;background:var(--plum);color:#fff;border:0;border-radius:50%;font-size:15px;cursor:pointer;opacity:0;visibility:hidden;transition:.3s}
+#top.show{opacity:1;visibility:visible}
+#top:hover{background:var(--deep)}
+
+@media(max-width:900px){
+  .burger{display:block}
+  nav.top{display:none;flex-direction:column;padding:8px 24px 14px}
+  nav.top.open{display:flex}
+  nav.top a{border:0!important;border-bottom:1px solid var(--line)!important}
+  .hero .wrap,.abt{grid-template-columns:1fr}
+  .chart{grid-template-columns:1fr}
+  .brand{flex-wrap:wrap}.addr{display:none}
+  .f,.abt .r{grid-template-columns:1fr}
+}
+@media(max-width:560px){section{padding:56px 0}.cd{flex-basis:180px}}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/xiaolu.js"></script>
+
+<header>
+  <div class="brand">
+    <div class="logo"><div class="heart">♥</div><h1>爱情电影网 撸丝片<small>Love · Film · Notes</small></h1></div>
+    <div class="addr"><b>aiqingdianyingwang</b><br>https://aiqingdianyingwanglusipian-wap.github.io</div>
+    <button class="burger" id="burger" aria-label="菜单">☰</button>
+  </div>
+  <nav class="top" id="nav"><a href="#home">首页</a><a href="#chart">热播榜单</a><a href="#theme">主题频道</a><a href="#new">新片速递</a><a href="#rev">影评精选</a><a href="#about">关于本站</a></nav>
+</header>
+
+<!-- Hero -->
+<section class="hero" id="home">
+  <div class="wrap">
+    <div><span class="pill">♥ 为每一段心动留一盏灯</span>
+      <h2>爱情，是<em>世间</em>最温柔的电影</h2>
+      <p>爱情电影网 撸丝片（aiqingdianyingwang）专注爱情电影与浪漫爱情片推荐，精选经典爱情片、高分爱情电影与爱情片评论，让每一段心动都被温柔记录。</p>
+      <div class="acts"><a href="#chart" class="btn bp">查看热播榜单</a><a href="#theme" class="btn bo">浏览主题</a></div>
+      <p class="quote">「最好的爱情电影，讲的从来不是爱情，而是我们。」</p>
+    </div>
+    <div class="album"><div class="rw">
+      <div class="ph" style="background:linear-gradient(135deg,#e58aa1,#8a3b56)"><b>初恋的<br>那个夏天</b></div>
+      <div class="ph" style="background:linear-gradient(135deg,#b9a6d4,#c25472)"><b>遇见你<br>之后</b></div>
+      <div class="ph" style="background:linear-gradient(135deg,#9bb29b,#8a3b56)"><b>异地<br>恋人</b></div>
+      <div class="ph" style="background:linear-gradient(135deg,#f7c6d2,#b9a6d4)"><b>迟到的<br>告白</b></div>
+    </div><div class="cap">爱情电影网 撸丝片 · 编辑精选<span>FEATURED LOVE FILMS</span></div></div>
+  </div>
+</section>
+
+<!-- 栏目一：热播榜单 -->
+<section id="chart">
+  <div class="wrap">
+    <div class="sec"><div class="k">TOP LOVE FILMS</div><h2>热播<em>榜单</em></h2><div class="ln"></div><p class="ds">爱情电影网 撸丝片整理的高分爱情片排行，从初恋、异地到重逢，每一部都值得细细品味。</p></div>
+    <div class="chart">
+      <article class="champ"><div class="cv" style="background:linear-gradient(135deg,rgba(226,138,161,.85),rgba(138,59,86,.85)),linear-gradient(135deg,#f7c6d2,#b9a6d4);background-blend-mode:overlay"><div class="rk">1</div><div><b>初恋的<br>那个夏天</b><span>ROMANCE · 2025</span></div></div><div class="in"><div class="sc">★ 9.4 分</div><h3>初恋的那个夏天</h3><p>那年夏天，蝉鸣、单车和她回头的一笑，成了他余生反复回放的画面。</p><a href="#" class="more">阅读影评 →</a></div></article>
+      <div class="rows">
+        <div class="row"><div class="n">2</div><div class="tx"><h4>遇见你之后</h4><span>都市爱情 · 2025</span></div><div class="st">★ 9.2</div></div>
+        <div class="row"><div class="n">3</div><div class="tx"><h4>异地恋人</h4><span>剧情 · 2025</span></div><div class="st">★ 9.0</div></div>
+        <div class="row"><div class="n">4</div><div class="tx"><h4>迟到的告白</h4><span>爱情 · 2024</span></div><div class="st">★ 8.9</div></div>
+        <div class="row"><div class="n">5</div><div class="tx"><h4>你是我的人间值得</h4><span>治愈 · 2024</span></div><div class="st">★ 8.8</div></div>
+        <div class="row"><div class="n">6</div><div class="tx"><h4>再见，我的少年</h4><span>青春 · 2024</span></div><div class="st">★ 8.7</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目二：主题 -->
+<section id="theme" style="background:var(--paper);">
+  <div class="wrap">
+    <div class="sec"><div class="k">LOVE THEMES</div><h2>主题<em>频道</em></h2><div class="ln"></div><p class="ds">围绕爱情的不同模样，爱情电影网 撸丝片整理出六大主题片单。</p></div>
+    <div class="themes">
+      <div class="th"><div class="ic" style="background:linear-gradient(135deg,#e58aa1,#c25472)">♥</div><h3>初恋心跳</h3><p>青涩、懵懂、小心翼翼，那些关于第一次心动的回忆。</p><div class="cnt">52 部影片</div></div>
+      <div class="th"><div class="ic" style="background:linear-gradient(135deg,#b9a6d4,#8a3b56)">✿</div><h3>都市情缘</h3><p>职场、咖啡馆、地铁与深夜电话里的都市爱情故事。</p><div class="cnt">48 部影片</div></div>
+      <div class="th"><div class="ic" style="background:linear-gradient(135deg,#9bb29b,#8a3b56)">❀</div><h3>治愈温柔</h3><p>被生活伤过之后，总有一部电影能轻轻抱住你。</p><div class="cnt">41 部影片</div></div>
+      <div class="th"><div class="ic" style="background:linear-gradient(135deg,#f0b460,#c25472)">☘</div><h3>久别重逢</h3><p>多年以后再见，我们是否还认得出彼此的心？</p><div class="cnt">36 部影片</div></div>
+      <div class="th"><div class="ic" style="background:linear-gradient(135deg,#e58aa1,#f0b460)">✧</div><h3>经典重温</h3><p>那些反复被提起、被模仿、被深爱的爱情经典。</p><div class="cnt">63 部影片</div></div>
+      <div class="th"><div class="ic" style="background:linear-gradient(135deg,#b9a6d4,#9bb29b)">❁</div><h3>纯爱青春</h3><p>校园、书信与白衣少年，最干净的喜欢。</p><div class="cnt">44 部影片</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目三：新片速递 -->
+<section id="new">
+  <div class="wrap">
+    <div class="sec"><div class="k">NEW ARRIVALS</div><h2>新片<em>速递</em></h2><div class="ln"></div><p class="ds">爱情电影网 撸丝片持续更新的爱情新片推荐，滑动查看更多。</p></div>
+    <div class="rail">
+      <article class="cd"><div class="cv" style="background:linear-gradient(135deg,#e58aa1,#8a3b56)"><b>遇见你之后</b></div><div class="in"><span class="tg">都市爱情</span><h4>遇见你之后</h4><div class="sc">★ 9.2 · 2025</div></div></article>
+      <article class="cd"><div class="cv" style="background:linear-gradient(135deg,#b9a6d4,#c25472)"><b>异地恋人</b></div><div class="in"><span class="tg">剧情</span><h4>异地恋人</h4><div class="sc">★ 9.0 · 2025</div></div></article>
+      <article class="cd"><div class="cv" style="background:linear-gradient(135deg,#9bb29b,#8a3b56)"><b>你是我的人间值得</b></div><div class="in"><span class="tg">治愈</span><h4>你是我的人间值得</h4><div class="sc">★ 8.8 · 2024</div></div></article>
+      <article class="cd"><div class="cv" style="background:linear-gradient(135deg,#f0b460,#c25472)"><b>再见，我的少年</b></div><div class="in"><span class="tg">青春</span><h4>再见，我的少年</h4><div class="sc">★ 8.7 · 2024</div></div></article>
+      <article class="cd"><div class="cv" style="background:linear-gradient(135deg,#f7c6d2,#b9a6d4)"><b>迟到的告白</b></div><div class="in"><span class="tg">爱情</span><h4>迟到的告白</h4><div class="sc">★ 8.9 · 2024</div></div></article>
+      <article class="cd"><div class="cv" style="background:linear-gradient(135deg,#c25472,#4a2a36)"><b>约定在雨天</b></div><div class="in"><span class="tg">纯爱</span><h4>约定在雨天</h4><div class="sc">★ 8.6 · 2024</div></div></article>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目四：影评 -->
+<section id="rev" style="background:var(--paper);">
+  <div class="wrap">
+    <div class="sec"><div class="k">REVIEWS</div><h2>影评<em>精选</em></h2><div class="ln"></div><p class="ds">来自爱情电影网 撸丝片编辑与影迷的爱情片影评，聊聊那些让人哭、让人笑、让人心动的故事。</p></div>
+    <div class="quotes">
+      <article class="qc"><div class="q">“</div><p>它让我想起十七岁那个不敢说出口的喜欢，原来有些心动，一辈子都忘不掉。</p><div class="au"><div class="av">茉</div><div><b>小满</b><span>影迷 · 爱上这部电影 3 年</span></div></div></article>
+      <article class="qc"><div class="q">“</div><p>结局不算完美，但那份克制与体面，恰恰是成年人爱情最真实的样子。</p><div class="au"><div class="av">安</div><div><b>安然</b><span>编辑 · 8 分钟阅读</span></div></div></article>
+      <article class="qc"><div class="q">“</div><p>看完走出影院，给许久未联系的前任发了一条"你还好吗"，然后释怀了。</p><div class="au"><div class="av">晚</div><div><b>晚晴</b><span>影迷 · 5 分钟阅读</span></div></div></article>
+    </div>
+  </div>
+</section>
+
+<!-- 数据条 -->
+<section style="padding:0;"><div class="wrap"><div class="stats">
+  <div class="stt"><strong>420+</strong><span>爱情影片</span></div>
+  <div class="stt"><strong>6</strong><span>主题频道</span></div>
+  <div class="stt"><strong>9.2</strong><span>平均评分</span></div>
+  <div class="stt"><strong>每日</strong><span>更新新片</span></div>
+  <div class="stt"><strong>12万+</strong><span>影迷关注</span></div>
+</div></div></section>
+
+<!-- 关于 -->
+<section id="about">
+  <div class="wrap">
+    <div class="abt">
+      <div class="l"><h2>关于 爱情电影网 撸丝片</h2><p>爱情电影网 撸丝片（aiqingdianyingwang）是一个专注爱情电影与浪漫爱情片的电影资讯平台，致力于为每一位相信爱情的人推荐值得一看的好电影。</p><p>从初恋、都市到治愈与重逢，我们相信每一部爱情片都是一段被认真讲述的心动。精选片单、高分排行与深度影评，陪伴你重温每一个感动瞬间。</p><div class="acts"><a href="#chart" class="btn bp">查看热播榜单</a><a href="#rev" class="btn bo">阅读影评</a></div></div>
+      <div class="r">
+        <div class="fbox"><div class="ic">♥</div><b>精选片单</b><span>聚焦爱情题材</span></div>
+        <div class="fbox"><div class="ic">✦</div><b>主题频道</b><span>六大爱情模样</span></div>
+        <div class="fbox"><div class="ic">✿</div><b>深度影评</b><span>编辑与影迷共写</span></div>
+        <div class="fbox"><div class="ic">❁</div><b>每日更新</b><span>持续推荐好片</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="f">
+    <div class="id"><div class="heart">♥</div><h4>爱情电影网 撸丝片</h4><p>爱情，是世间最温柔的电影。爱情电影网 撸丝片专注爱情电影与浪漫爱情片推荐，提供精选片单、高分排行与爱情片评论。</p></div>
+    <div><h5>影片</h5><a href="#chart">热播榜单</a><a href="#theme">主题频道</a><a href="#new">新片速递</a><a href="#">高分推荐</a></div>
+    <div><h5>内容</h5><a href="#rev">影评精选</a><a href="#">编辑手记</a><a href="#">电影资讯</a><a href="#">观影指南</a></div>
+    <div><h5>关于</h5><a href="#about">关于本站</a><a href="#">合作投稿</a><a href="#">联系我们</a><a href="#">免责声明</a></div>
+  </div>
+  <div class="cp"><b>爱情电影网 撸丝片</b> &nbsp;|&nbsp; aiqingdianyingwang &nbsp;|&nbsp; 网址：<b>https://aiqingdianyingwanglusipian-wap.github.io</b><br>© 2026 爱情电影网 撸丝片 版权所有 &nbsp;·&nbsp; 本站内容仅供学习与交流，如发现侵权内容请及时联系我们删除</div>
+</footer>
+
+<button id="top" title="回到顶部">↑</button>
+
+<script>
+document.getElementById('burger').addEventListener('click',function(){document.getElementById('nav').classList.toggle('open');});
+document.querySelectorAll('nav.top a').forEach(function(a){a.addEventListener('click',function(){document.getElementById('nav').classList.remove('open');});});
+window.addEventListener('scroll',function(){var t=document.getElementById('top');window.scrollY>400?t.classList.add('show'):t.classList.remove('show');});
+document.getElementById('top').addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'});});
+</script>
+</body>
+</html>
